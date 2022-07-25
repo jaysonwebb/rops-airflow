@@ -13,7 +13,7 @@ You'll want to use 'pip install airtable' to use the airtable api.  Instructions
 
 ### Questions from this round of testing
 
-- TBD
+- Currently, only 100 records are being returned and not all of them have the appropriate fields, like Name.  So I'm wondering if there is a delimiter problem.
 
 ## Third round?
 TBD.
