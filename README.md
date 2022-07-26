@@ -18,6 +18,7 @@ I think we have successfully figured out how to deal with pagination.  I don't l
 ### Outcomes from this round of testing 
 
 - July 25: Solved the pagination problem.
+- July 26: How do we map email address to a company.  We don't have account sid
 
 ## Next
 Eventually I think we'll want to: 
