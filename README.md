@@ -9,7 +9,11 @@ The initial tests were geared toward just being able to read and write from/to a
 You'll want to use 'pip install airtable' to use the airtable api.  Instructions for for [airtable api](https://pypi.org/project/airtable/)
 
 ## Second round testing
-**Updated 25 July 2022**.  The second round of testing will involve the files `WriteToAirtable_test2.ipynb` and 'secrets2.json' and will be focused on using an account sid from Airtable to (1) query data from Presto (probably for a subset of accounts) and (2) update one or more fields in Airtable.  Again, we're just trying to see if things can be done at all.  We might want to go ahead and scale to using Airflow at this stage.  I'll leave that to Kunal.
+**Updated 26 July 2022**.  The second round of testing is underway and involves the files `WriteToAirtable_test2.ipynb` and 'secrets2.json'.  It is focused on reading multiple pages from the Airtable base.  Right now there are 126 pages containing 12,546 records.  Airtable limits pages to 100 records.  This is test data, so it won't grow, but it does have the structure of the "real" data.  
+
+I think we have successfully figured out how to deal with pagination.  I don't love the data structure it's returning right now, a list that contains two lists: List 1 has 126 dict structures, one for each page of data.  List 2 has a count of items on each page.  Summing across this list gives the total page count.  There is probably a better way to do this.  We might consider dropping the count altogether.  It's really there for debugging purposes at this point.
+
+**The next step** will be using an account sid from the Airtable data to (1) query data from Presto (probably for a subset of accounts) and (2) update one or more fields in Airtable.  Again, we're just trying to see if things can be done at all. 
 
 ### Outcomes from this round of testing 
 
