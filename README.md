@@ -4,7 +4,7 @@
 The purpose of this project is to be able to supplement data in the ROps team Airtable database with data pulled from Presto.  [See this doc](https://docs.google.com/document/d/15Jp_FYyiAMoQO8iGlfNYmN0ZJDALifXhpNdnGTTFJzA/edit?usp=sharing)
 
 ## Initial tests
-The initial tests were geared toward just being able to read and write to/from an Airtable base (`WriteToAirtable.ipynb`).  The file `secrets.json` has various API KEYS and other secrets necessary to access a given Airtable tab.  The file `secrets2.json` serves the same purpose but has info for the test database that Maggie set up.  The initial tests were completed in early July.  We were able to successfully read, create and update records (we didn't try deleting, but we could, for example to delete duplicates).
+The initial tests were geared toward just being able to read and write from/to an Airtable base (`WriteToAirtable.ipynb`).  The file `secrets.json` has various API KEYS and other secrets necessary to access a given Airtable tab.  The file `secrets2.json` serves the same purpose but has info for the test database that Maggie set up.  The initial tests were completed in early July.  We were able to successfully read, create and update records (we didn't try deleting, but we could, for example to delete duplicates).
 
 You'll want to use 'pip install airtable' to use the airtable api.  Instructions for for [airtable api](https://pypi.org/project/airtable/)
 
