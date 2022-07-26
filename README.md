@@ -6,7 +6,7 @@ The purpose of this project is to be able to supplement data in the ROps team Ai
 ## Initial tests
 The initial tests were geared toward just being able to read and write from/to an Airtable base (`WriteToAirtable.ipynb`).  The file `secrets.json` has various API KEYS and other secrets necessary to access a given Airtable tab.  The file `secrets2.json` serves the same purpose but has info for the test database that Maggie set up.  The initial tests were completed in early July.  We were able to successfully read, create and update records (we didn't try deleting, but we could, for example to delete duplicates).
 
-You'll want to use 'pip install airtable' to use the airtable api.  Instructions for for [airtable api](https://pypi.org/project/airtable/)
+You'll want to use 'pip install airtable' to use the airtable api.  Instructions for for [airtable api](https://pypi.org/project/airtable/), which also describes other dependencies you'll want to install.
 
 ## Second round testing
 **Updated 26 July 2022**.  The second round of testing is underway and involves the files `WriteToAirtable_test2.ipynb` and 'secrets2.json'.  It is focused on reading multiple pages from the Airtable base.  Right now there are 126 pages containing 12,546 records.  Airtable limits pages to 100 records.  This is test data, so it won't grow, but it does have the structure of the "real" data.  
