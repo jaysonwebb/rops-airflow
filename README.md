@@ -19,6 +19,7 @@ I think we have successfully figured out how to deal with pagination.  I don't l
 
 - July 25: Solved the pagination problem.
 - July 26: How do we map email address to a company.  We don't have account sid
+  - There are some duplicate emails, even for non-identical entries.
 
 ## Next
 Eventually I think we'll want to: 
