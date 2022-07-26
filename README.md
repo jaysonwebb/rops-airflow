@@ -15,8 +15,11 @@ You'll want to use 'pip install airtable' to use the airtable api.  Instructions
 
 - July 25: Solved the pagination problem.
 
-## Third round?
-TBD.
-
 ## Next
+Eventually I think we'll want to: 
+- get all this setup in Airflow and running on a schedule
+- track errors/data quality
+- define/report some kind of metrics on the data itself?  Like percentage of entries with revenue over $X.
+
+
 
